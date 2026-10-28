@@ -47,13 +47,11 @@ import logcat.LogPriority
 import mihon.app.di.appGraph
 import mihon.icons.materialsymbols.MaterialSymbols
 import mihon.icons.materialsymbols.rounded.Public
-import mihon.icons.simpleicons.Discord
 import mihon.icons.simpleicons.Facebook
 import mihon.icons.simpleicons.Github
 import mihon.icons.simpleicons.Reddit
 import mihon.icons.simpleicons.SimpleIcons
 import mihon.icons.simpleicons.X
-import tachiyomi.core.common.Constants
 import tachiyomi.core.common.util.system.logcat
 import tachiyomi.domain.release.interactor.GetApplicationRelease
 import tachiyomi.i18n.MR
@@ -183,11 +181,6 @@ object AboutScreen : Screen() {
                             label = stringResource(MR.strings.website),
                             icon = MaterialSymbols.Rounded.Public,
                             url = "https://mihon.app",
-                        )
-                        LinkIcon(
-                            label = "Discord",
-                            icon = SimpleIcons.Discord,
-                            url = Constants.URL_DISCORD,
                         )
                         LinkIcon(
                             label = "X",
