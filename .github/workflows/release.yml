@@ -129,6 +129,8 @@ jobs:
     if: github.repository == 'JumpmanSr/mihon'
     name: Create GitHub Release
     runs-on: ubuntu-26.04
+    permissions:
+      contents: write
     needs: [get_tag, build, build_foss]
 
     steps:
@@ -149,8 +151,10 @@ jobs:
         uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
           tag_name: ${{ needs.get_tag.outputs.tag }}
-          name: Mihon ${{ needs.get_tag.outputs.tag }}
+          name: Mihon AdFree ${{ needs.get_tag.outputs.tag }}
           body: |
+            Independent ad-free build of Mihon: no donation popups, Support Us screen, Patreon or Discord links. Not affiliated with or endorsed by the Mihon project.
+
             Check out the [past release notes](https://github.com/JumpmanSr/mihon/releases) if you're upgrading from an earlier version.
 
             <!-->
@@ -169,6 +173,6 @@ jobs:
             mihon-armeabi-v7a-${{ needs.get_tag.outputs.tag }}.apk
             mihon-x86-${{ needs.get_tag.outputs.tag }}.apk
             mihon-x86_64-${{ needs.get_tag.outputs.tag }}.apk
-          draft: true
+          draft: false
           prerelease: false
-          token: ${{ secrets.MIHON_BOT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
