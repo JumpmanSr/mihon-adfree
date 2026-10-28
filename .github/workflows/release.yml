@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   get_tag:
-    if: github.repository == 'JumpmanSr/mihon'
+    if: github.repository == 'JumpmanSr/mihon-adfree'
     name: Extract tag name
     runs-on: 'ubuntu-26.04'
     outputs:
@@ -25,7 +25,7 @@ jobs:
         run: echo "tag=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_OUTPUT
 
   build:
-    if: github.repository == 'JumpmanSr/mihon'
+    if: github.repository == 'JumpmanSr/mihon-adfree'
     name: Build
     runs-on: 'ubuntu-26.04'
     needs: get_tag
@@ -80,7 +80,7 @@ jobs:
             mihon-x86_64-${{ needs.get_tag.outputs.tag }}.apk
 
   build_foss:
-    if: github.repository == 'JumpmanSr/mihon'
+    if: github.repository == 'JumpmanSr/mihon-adfree'
     name: Build (FOSS)
     runs-on: ubuntu-26.04
     needs: get_tag
@@ -126,7 +126,7 @@ jobs:
           path: mihon-${{ needs.get_tag.outputs.tag }}-foss.apk
 
   release:
-    if: github.repository == 'JumpmanSr/mihon'
+    if: github.repository == 'JumpmanSr/mihon-adfree'
     name: Create GitHub Release
     runs-on: ubuntu-26.04
     permissions:
@@ -155,7 +155,7 @@ jobs:
           body: |
             Independent ad-free build of Mihon: no donation popups, Support Us screen, Patreon or Discord links. Not affiliated with or endorsed by the Mihon project.
 
-            Check out the [past release notes](https://github.com/JumpmanSr/mihon/releases) if you're upgrading from an earlier version.
+            Check out the [past release notes](https://github.com/JumpmanSr/mihon-adfree/releases) if you're upgrading from an earlier version.
 
             <!-->
 

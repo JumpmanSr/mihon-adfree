@@ -38,9 +38,9 @@ class AppUpdateChecker(
 
 val GITHUB_REPO: String by lazy {
     if (isNightlyBuildType) {
-        "JumpmanSr/mihon-preview"
+        "JumpmanSr/mihon-adfree-preview"
     } else {
-        "JumpmanSr/mihon"
+        "JumpmanSr/mihon-adfree"
     }
 }
 

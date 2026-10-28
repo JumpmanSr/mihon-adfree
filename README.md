@@ -5,12 +5,12 @@
 ### Independent ad-free build of Mihon
 Discover and read manga, webtoons, comics, and more – without donation popups, "Support Us" screens or Patreon links.
 
-[![CI](https://img.shields.io/github/actions/workflow/status/JumpmanSr/mihon/build.yml?labelColor=27303D)](https://github.com/JumpmanSr/mihon/actions/workflows/build.yml)
-[![License: Apache-2.0](https://img.shields.io/github/license/JumpmanSr/mihon?labelColor=27303D&color=0877d2)](/LICENSE)
+[![CI](https://img.shields.io/github/actions/workflow/status/JumpmanSr/mihon-adfree/build.yml?labelColor=27303D)](https://github.com/JumpmanSr/mihon-adfree/actions/workflows/build.yml)
+[![License: Apache-2.0](https://img.shields.io/github/license/JumpmanSr/mihon-adfree?labelColor=27303D&color=0877d2)](/LICENSE)
 
 ## Download
 
-[![Mihon AdFree](https://img.shields.io/github/v/release/JumpmanSr/mihon.svg?maxAge=3600&label=Stable&labelColor=06599d&color=043b69)](https://github.com/JumpmanSr/mihon/releases/latest)
+[![Mihon AdFree](https://img.shields.io/github/v/release/JumpmanSr/mihon-adfree.svg?maxAge=3600&label=Stable&labelColor=06599d&color=043b69)](https://github.com/JumpmanSr/mihon-adfree/releases/latest)
 
 *Requires Android 8.0 or higher.*
 
